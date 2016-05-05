@@ -36,6 +36,15 @@ public class MainActivity extends AppCompatActivity {
         builder.setContentText("Hien thi nó lên nào");
         builder.setSmallIcon(R.drawable.iconnotifi);
         builder.setNumber(notificationnumber++);
+        //them mot style text big
+      /*  NotificationCompat.InboxStyle inboxStyle= new NotificationCompat.InboxStyle();
+        String []text = new String[2];
+        text[0]="day la text mot";
+        text[1]="day la text hai";
+        for (int i=0 ;i<text.length ;i++){
+         inboxStyle.addLine(text[i]);
+        }
+        builder.setStyle(inboxStyle);*/
         // khi nguoi dung click thì notication tren dramwer tự tắt
         builder.setAutoCancel(true);
         // tao mot intent nham khhoi tao activity khi nguoi dung click vao notification
@@ -51,4 +60,5 @@ public class MainActivity extends AppCompatActivity {
         finish();
 
     }
+    // u
 }
