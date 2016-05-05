@@ -14,7 +14,6 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     Button btnnoca;
-    NotificationManager notificationManager;
     int notificationnumber;
 
     @Override
@@ -37,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
         builder.setContentText("Hien thi nó lên nào");
         builder.setSmallIcon(R.drawable.iconnotifi);
         builder.setNumber(notificationnumber++);
+        // khi nguoi dung click thì notication tren dramwer tự tắt
+        builder.setAutoCancel(true);
         // tao mot intent nham khhoi tao activity khi nguoi dung click vao notification
         Intent intent=new Intent(getApplicationContext(),mainshow_layout.class);
         TaskStackBuilder  taskStackBuilder=TaskStackBuilder.create(this);
