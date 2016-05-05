@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyToast</string>
+    <string name="buttonshow">Hiển Thị Notification</string>
+</resources>
